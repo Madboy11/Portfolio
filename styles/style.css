@@ -54,22 +54,24 @@ body {
 /* Home Section */
 .home-section {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    height: calc(100vh - 70px);
+    height: calc(600px - 70px);
     padding: 20px;
 }
 
 /* Card */
 .card {
+    width: auto;
+    height: 70%;
+    margin: 10px;
     background: #fff;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
@@ -282,4 +284,59 @@ footer a {
 
 footer a:hover {
     color: #d35400;
+}
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Links Styling */
+.contact-section a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-section a:hover {
+    color: #d35400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .contact-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
 }
